@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "extends": [
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks",
+    "unused-imports",
+    "eslint-plugin-no-inline-styles"
+  ],
+  "rules": {
+    "no-inline-styles/no-inline-styles": 0,
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
